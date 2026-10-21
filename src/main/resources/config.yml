@@ -1,0 +1,43 @@
+# Configuration for the Nether Block Infection Plugin
+
+# List of worlds where the infection can spread
+worlds:
+  - world
+  - world_nether
+
+# Custom biomes that can be infected
+custom_biomes:
+  - "minecraft:nether_wastes"
+  - "minecraft:basalt_deltas"
+
+# Block conversions for infection
+block_conversions:
+  - from: "minecraft:netherrack"
+    to: "minecraft:sculk"
+  - from: "minecraft:magma_block"
+    to: "minecraft:sculk_catalyst"
+  - from: "minecraft:blackstone"
+    to: "minecraft:sculk_sensor"
+
+# Infection spread radius
+infection_radius: 3
+
+# Immune blocks that cannot be infected
+immune_blocks:
+  - "minecraft:bedrock"
+  - "minecraft:obsidian"
+  - "minecraft:barrier"
+
+# Items to revert changes
+revert_items:
+  - "minecraft:water_bucket"
+  - "minecraft:lava_bucket"
+
+# Overworldificator command settings
+overworldificator:
+  enabled: true
+  cooldown: 60
+  permission: "netherblockinfection.overworldificator"
+
+# Infection spread interval in ticks
+infection_spread_interval: 20

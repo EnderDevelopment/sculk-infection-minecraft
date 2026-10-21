@@ -1,0 +1,14 @@
+name: SculkInfection
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+commands:
+  infect:
+    description: Infect a block with Sculk-like properties.
+    usage: /infect
+  revert:
+    description: Revert infected blocks to their original state.
+    usage: /revert
+  overworldificator:
+    description: Convert infected blocks and biomes back to overworld variants.
+    usage: /overworldificator
